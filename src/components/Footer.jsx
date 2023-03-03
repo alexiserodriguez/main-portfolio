@@ -20,22 +20,25 @@ export const NavItem = ({ children, to, ...props }) => {
 
 function Footer() {
   return (
-    <div>
-      <hr className="text-turq mt-48" />
-      <div className="flex flex-col lg:flex-row justify-center lg:justify-between align-middle  p-8">
-        <ul className="flex-row flex flex-wrap gap-2 justify-center lg:gap-0  lg:space-x-0 pb-2 pt-3 lg:px-6">
-          <NavItem to="/">Home</NavItem>
-          <NavItem to="/about">About me</NavItem>
-          <NavItem to="/portfolio">Portfolio</NavItem>
-          <NavItem to="/contact">Contact me</NavItem>
-        </ul>
-        <div className="flex flex-col items-center lg:justify-center">
-          <h1 className="font-par text-lg text-white">
-            2023. Alexis Rodriguez
-          </h1>
+    <>
+      {window.scrollTo(0, 0)}
+      <div>
+        <hr className="text-turq mt-48" />
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-between align-middle  p-8">
+          <ul className="flex-row flex flex-wrap gap-2 justify-center lg:gap-0  lg:space-x-0 pb-2 pt-3 lg:px-6">
+            <NavItem to="/">Home</NavItem>
+            <NavItem to="/about">About me</NavItem>
+            <NavItem to="/portfolio">Portfolio</NavItem>
+            <NavItem to="/contact">Contact me</NavItem>
+          </ul>
+          <div className="flex flex-col items-center lg:justify-center">
+            <h1 className="font-par text-lg text-white">
+              2023. Alexis Rodriguez
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
