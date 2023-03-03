@@ -3,14 +3,14 @@ import { IoIosArrowBack, IoIosMenu } from "react-icons/io";
 import { NavLink} from "react-router-dom";
 
 export const NavItem = ({ children, to, ...props }) => {
+  const activeClassname="text-sm flex items-center lg:text-lg border-b-2 border-transparent text-blue lg:text-white mb-[4px] lg:mb-none rounded-md md:rounded-none py-1 px-8 md:pt-3 md:px-0 bg-transparent font-heading underline decoration-green decoration-2 underline-offset-[5px] pointer-events-none"
+
+  const inactiveClassname="text-sm flex items-center lg:text-lg border-b-2 border-transparent text-blue lg:text-white mb-[4px] lg:mb-none rounded-md md:rounded-none py-1 px-8 md:pt-3 md:px-0 bg-transparent font-heading underline-none md:decoration-transparent hover:md:underline hover:md:decoration-green hover:md:decoration-2 hover:lg:underline-offset-[5px] hover:md:decoration-solid  transition duration-300"
   return (
     <li>
       <NavLink
         {...props}
-        className="text-sm flex items-center lg:text-lg border-b-2 border-transparent
-        text-blue lg:text-white mb-[4px] lg:mb-none rounded-md md:rounded-none py-1 px-8 md:pt-3 md:px-0 bg-transparent font-heading  
-       lg:underline-none md:decoration-transparent
-        hover md:underline hover:md:decoration-green hover:md:decoration-2 hover lg:underline-offset-[5px] hover:md:decoration-solid  transition duration-300"
+        className={({isActive})=> isActive ? activeClassname : inactiveClassname}
         to={to}
       >
         {children}

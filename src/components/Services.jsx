@@ -31,19 +31,13 @@ function Services() {
       <Title>Services</Title>
       <div className="py-10 space-y-10 md:space-y-6">
         <Service name={DM} text="Data Management">
-          The most important step in the Data Analysis process is data
-          collection, storage, and use, which must be done safely, effectively,
-          and affordably. It establishes how effectively the analysis is driven.
+          The most important step in the Data Analysis process is data collection, storage, and use, which must be done safely, effectively, and affordably. It establishes how effectively the analysis is driven.
         </Service>
         <Service name={DV} text="Data Visualization">
-          Data results must be visually communicated clearly and effectively
-          through storytelling to gather and provide insightful information for
-          the business.
+          Data results must be clearly and effectively communicated through visual storytelling to gather and provide insightful information for the business.
         </Service>
         <Service name={BI} text="BI Reporting">
-          I want to have a tight working relationship with the business approach
-          in order to create the most accurate strategy that allows it simple
-          for clients to make decisions.
+        I aim to have a tight working relationship with the business approach in order to create the most accurate strategy that allows it simple for clients to make decisions.
         </Service>
       </div>
     </div>
