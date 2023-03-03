@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "image":"certs/1.png",
+        "link":"https://www.freecodecamp.org/certification/alexiserodriguez/data-analysis-with-python-v7"
+    },
+    {
+        "id":2,
+        "image":"certs/2.png",
+        "link": "https://www.credential.net/b8273573-1b29-48a5-a37c-23db4d002990#gs.qkzetv"
+    },
+    {
+        "id":3,
+        "image":"certs/3.png",
+        "link": "https://www.coursera.org/account/accomplishments/certificate/HSQ3QTGWNNB2"
+    },
+    {
+        "id":4,
+        "image":"certs/4.png",
+        "link": "https://www.kaggle.com/learn/certification/alexiserodriguez/advanced-sql"
+    },
+    {
+        "id":5,
+        "image":"certs/5.png",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/QR3DVAGTT4CC"
+    },
+    {
+        "id":6,
+        "image":"certs/6.png",
+        "link": "https://platzi.com/p/alexiserodriguez/curso/2359-business-intelligence/diploma/detalle/"
+    }
+]
