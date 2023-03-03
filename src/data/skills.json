@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "tech": "MS Excel",
+      "color": "excel",
+      "logo": "tech-logos/excel.png"
+    },
+    {
+      "id": 2,
+      "tech": "Python",
+      "color": "python",
+      "logo": "tech-logos/python.png"
+    },
+    {
+      "id": 3,
+      "tech": "Pandas",
+      "color": "pandas",
+      "logo": "tech-logos/pandas.png"
+    },
+    {
+      "id": 4,
+      "tech": "NumPy",
+      "color": "numpy",
+      "logo": "tech-logos/numpy.png"
+    },
+    {
+      "id": 5,
+      "tech": "Seaborn",
+      "color": "seaborn",
+      "logo": "tech-logos/seaborn.png"
+    },
+    {
+      "id": 6,
+      "tech": "SQL",
+      "color": "sql",
+      "logo": "tech-logos/sql.png"
+    },
+    {
+      "id": 7,
+      "tech": "MySQL",
+      "color": "mysql",
+      "logo": "tech-logos/mysql.png"
+    },
+    {
+      "id": 8,
+      "tech": "MS SQL Server",
+      "color": "mssql",
+      "logo": "tech-logos/sql server.png"
+    },
+    {
+      "id": 9,
+      "tech": "PostgreSQL",
+      "color": "postgresql",
+      "logo": "tech-logos/postgreSQL.png"
+    },
+    {
+      "id": 10,
+      "tech": "Tableau",
+      "color": "tableau",
+      "logo": "tech-logos/tableau.png"
+    },
+    {
+      "id": 11,
+      "tech": "Looker",
+      "color": "looker",
+      "logo": "tech-logos/looker.png"
+    },
+    {
+      "id": 12,
+      "tech": "React",
+      "color": "react",
+      "logo": "tech-logos/react.png"
+    }
+  ]

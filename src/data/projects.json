@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Exploratory Data Analysis - Movies Correlation Project",
+      "description": "An EDA on a movies dataset is done using Pandas, Seaborn, Numpy, and Matplotlib frameworks from Python. The main objective was to determine whether there are correlation among multiple variables.",
+      "date": "October 2022",
+      "link": "https://nbviewer.org/github/alexiserodriguez/EDA-Movies-dataset/blob/main/EDA%20-%20Movies%20dataset%20variables%20correlation.ipynb",
+      "readmore": "https://github.com/alexiserodriguez/EDA-Movies-dataset",
+      "image": "projects/movies.png",
+      "techs": ["Python", "Pandas", "NumPy", "Seaborn"]
+    },
+    {
+      "id": 2,
+      "title": "COVID Dashboard as per January 2022",
+      "description": "Dashboard done with Tableau Public from COVID 19 Dataset. It was previously cleaned and organized with Microsoft Excel.",
+      "date": "October 2022",
+      "link": "https://public.tableau.com/app/profile/alexiserodriguez/viz/CovidDashboardasperJanuary2022/Dashboard1",
+      "readmore": "https://github.com/alexiserodriguez/COVID19-Data-Visualization",
+      "image": "projects/covid19.png",
+      "techs": ["MS SQL Server", "MS Excel", "Tableau"]
+    },
+    {
+      "id": 3,
+      "title": "FIFA WC 2022 Best National teams analysis",
+      "description": "An analysis on the FIFA 23 Players dataset was done with Python using Jupyter Notebook to find out the top 5 national teams.",
+      "date": "October 2022",
+      "link": "https://nbviewer.org/github/alexiserodriguez/FIFA-World-Cup-Qatar-2022-Best-National-Teams-in-FIFA-23/blob/main/FIFA%20World%20Cup%20Qatar%202022%20Best%20National%20Teams%20-%20FIFA%2023.ipynb",
+      "readmore": "https://github.com/alexiserodriguez/FIFA-World-Cup-Qatar-2022-Best-National-Teams-in-FIFA-23",
+      "image": "projects/fifawc.png",
+      "techs": ["Python", "Pandas", "NumPy", "Seaborn"]
+    },
+    {
+      "id": 4,
+      "title": "Hydrogen Supply Scenario, 2021-2030 Analysis and Tableau Dashboard",
+      "description": "A SQL Server analysis and a Tableau dashboard on the Hydrogen Projects Database was developed focusing on the 2021-2030 scenario from the IEA dataset.",
+      "date": "November 2022",
+      "link": "https://public.tableau.com/app/profile/alexiserodriguez/viz/HydrogenSupplyscenario2021-2030VOTD/HydrogenSupply",
+      "readmore": "https://github.com/alexiserodriguez/Hydrogen-Supply-scenario-2021-2030",
+      "image": "projects/hydrogen.png",
+      "techs": ["MS SQL Server", "MS Excel", "Tableau"]
+    },
+    {
+      "id": 5,
+      "title": "Published research article and Tableau Dashboard",
+      "description": "The 'Enhanced calcium carbonate scale inhibitor based on linseed mucilage' article was published on Brazilian Journal of Petroleum and Gas, and an interactive Tableau dashboard was developed.",
+      "date": "November 2022",
+      "link": "https://public.tableau.com/app/profile/alexiserodriguez/viz/Enhancedcalciumcarbonatescaleinhibitorbasedonlinseedmucilage/MainDashboard",
+      "readmore": "https://www.portalabpg.org.br/bjpg/index.php/bjpg/article/view/799",
+      "image": "projects/bioinhibitor.png",
+      "techs": ["MS Excel", "Tableau"]
+    }
+  ]
+  
