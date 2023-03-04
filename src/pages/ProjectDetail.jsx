@@ -22,7 +22,7 @@ export function PrCard({ p }) {
     <div className="min-w-full md:min-w-full mx-auto bg-transparent rounded-sm shadow-lg overflow-hidden md:max-w-sm ">
       <div className="md:flex md:flex-row">
         <div className="min-h-[450px] lg:min-h-[300px] p-8 border-4 rounded-[25px] border-turq flex flex-wrap justify-between dark:border-lborder dark:border-2">
-          <div className="flex flex-wrap gap-2 max-h-[40px]">
+          <div className="flex flex-wrap gap-2 max-h-[90px] mb-[20px] lg:max-h-[40px]">
             {p.techs.map((t) => (
               <Tech t={t} />
             ))}
