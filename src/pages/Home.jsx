@@ -12,6 +12,7 @@ import LatestProjects from "../components/LatestProjects";
 function Home() {
   return (
     <>
+      
       <NavBar />
       <AnimateOnScroll>
         <Section>

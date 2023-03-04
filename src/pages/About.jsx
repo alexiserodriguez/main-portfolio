@@ -10,7 +10,7 @@ import Certifications from "../components/Certifications";
 
 export function ParAb(props) {
   return (
-    <p className="md:leading-normal xs:text-md sm:text-lg md:text-2xl lg:text-4xl pb-8 xl:pb-16 font-par text-white ">
+    <p className="md:leading-normal xs:text-md sm:text-lg md:text-2xl lg:text-4xl pb-8 xl:pb-16 font-par text-white dark:text-blue duration-300">
       {props.children}
     </p>
   );

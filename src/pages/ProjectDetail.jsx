@@ -11,7 +11,7 @@ import LinkC from "../components/LinkC";
 export function PrTitle(props) {
   return (
     <div className="border-b-green border-b-4 max-w-[100%] xl:max-w-[60%]">
-      <h1 className="text-2xl md:leading-tight md:text-5xl font-heading text-white pb-2 md:pb-3 ">
+      <h1 className="text-2xl md:leading-tight md:text-5xl font-heading text-white pb-2 md:pb-3 dark:text-blue dark:duration-300">
         {props.children}
       </h1>
     </div>
@@ -21,17 +21,17 @@ export function PrCard({ p }) {
   return (
     <div className="min-w-full md:min-w-full mx-auto bg-transparent rounded-sm shadow-lg overflow-hidden md:max-w-sm ">
       <div className="md:flex md:flex-row">
-        <div className="min-h-[450px] lg:min-h-[300px] p-8 border-4 rounded-[25px] border-turq flex flex-wrap justify-between">
+        <div className="min-h-[450px] lg:min-h-[300px] p-8 border-4 rounded-[25px] border-turq flex flex-wrap justify-between dark:border-lborder dark:border-2">
           <div className="flex flex-wrap gap-2 max-h-[40px]">
             {p.techs.map((t) => (
               <Tech t={t} />
             ))}
           </div>
           <div className="flex flex-col justify-between">
-            <h1 className="block mt-1 text-md md:text-xl leading-tight font-heading text-white">
+            <h1 className="block mt-1 text-md md:text-xl leading-tight font-heading text-white dark:text-blue dark:duration-300">
               {p.date}
             </h1>
-            <p className=" text-white font-par  text-md md:text-lg ">
+            <p className=" text-white font-par  text-md md:text-lg dark:text-blue duration-300">
               {p.description}
             </p>
             <div className="flex flex-col gap-3 lg:flex-row  lg:gap-4">
@@ -43,9 +43,9 @@ export function PrCard({ p }) {
               </LinkC>
               <LinkC
                 to={p.readmore}
-                className="flex justify-center items-center bg-transparent border-turq border-2 py-2 px-10 rounded-xl hover:border-green transition duration-200"
+                className="flex justify-center items-center bg-transparent border-turq border-2 py-2 px-10 rounded-xl hover:border-green transition duration-200 dark:border-lborder"
               >
-                <h1 className=" text-green text-xl font-heading">Read more</h1>
+                <h1 className=" text-green text-xl font-heading dark:text-turq">Read more</h1>
               </LinkC>
             </div>
           </div>

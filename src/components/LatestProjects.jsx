@@ -11,13 +11,13 @@ export function Tech({ t }) {
     "MS Excel":
       "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-excel ",
     Python:
-      "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-python",
+      "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-python dark:border-[#E0C22B]",
     Pandas:
       "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-pandas",
     NumPy:
       "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-numpy",
     Seaborn:
-      "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-seaborn",
+      "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-seaborn dark:border-[#487ea5]",
     SQL: "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-sql",
     MySQL:
       "inline-flex max-h-7 py-0 px-2 border-[2px] rounded-full border-mysql",
@@ -35,10 +35,10 @@ export function Tech({ t }) {
 
   const text = {
     "MS Excel": "p-1 text-xs mx-auto font-heading text-excel",
-    Python: "p-1 text-xs mx-auto font-heading text-python",
+    Python: "p-1 text-xs mx-auto font-heading text-python dark:text-[#E0C22B]",
     Pandas: "p-1 text-xs mx-auto font-heading text-pandas",
     NumPy: "p-1 text-xs mx-auto font-heading text-numpy",
-    Seaborn: "p-1 text-xs mx-auto font-heading text-seaborn",
+    Seaborn: "p-1 text-xs mx-auto font-heading text-seaborn dark:text-[#487ea5]",
     SQL: "p-1 text-xs mx-auto font-heading text-sql",
     MySQL: "p-1 text-xs mx-auto font-heading text-mysql",
     "MS SQL Server": "p-1 text-xs mx-auto font-heading text-mssql",
@@ -60,7 +60,7 @@ export function Tech({ t }) {
 
 export function Project({ p, children }) {
   return (
-    <div className="min-w-full md:min-w-0 mx-auto bg-transparent rounded-[40px] shadow-lg overflow-hidden md:max-w-sm hover:bg-[#21385a] hover:scale-105 transition duration-300">
+    <div className="min-w-full md:min-w-0 mx-auto bg-transparent rounded-[40px] shadow-lg overflow-hidden md:max-w-sm hover:bg-[#21385a] hover:scale-105 transition duration-300 dark:hover:bg-lhover">
       <LinkC to={`/portfolio/${p.id}`}>
         <div className="shrink-0">
           <img
@@ -70,20 +70,20 @@ export function Project({ p, children }) {
             width={500}
           />
         </div>
-        <div className="h-[450px] lg:h-100 p-8 border-l-4 border-r-4 border-b-4 rounded-[40px] rounded-t-none border-turq flex flex-wrap justify-between">
+        <div className="h-[450px] lg:h-100 p-8 border-l-4 border-r-4 border-b-4 rounded-[40px] rounded-t-none border-turq flex flex-wrap justify-between dark:border-lborder dark:duration-300 dark:border-2 ">
           <div className="flex flex-wrap gap-2 max-h-[50px] lg:max-h-[30px]">
             {p.techs.map((t) => (
               <Tech t={t} />
             ))}
           </div>
           <div className="flex flex-col justify-between">
-            <h1 className="block mt-1 text-xl lg:text-2xl leading-tight font-heading text-white">
+            <h1 className="block mt-1 text-xl lg:text-2xl leading-tight font-heading text-white dark:text-blue duration-300">
               {p.title}
             </h1>
-            <p className="mt-2 text-white font-par  text-md lg:text-md">
+            <p className="mt-2 text-white font-par  text-md lg:text-md dark:text-blue duration-300">
               {p.description}
             </p>
-            <h1 className="block mt-1 text-md lg:text-lg leading-tight font-heading text-white">
+            <h1 className="block mt-1 text-md lg:text-lg leading-tight font-heading text-white dark:text-blue duration-300">
               {p.date}
             </h1>
             <div className="flex justify-start lg:flex gap-2">
@@ -96,9 +96,9 @@ export function Project({ p, children }) {
 
               <LinkC
                 to={p.readmore}
-                className="flex items-center border-turq border-[2px] py-2 px-5 rounded-xl hover:border-green transition duration-200"
+                className="flex items-center border-turq border-[2px] py-2 px-5 rounded-xl hover:border-green transition duration-200 dark:border-lborder dark:hover:border-green"
               >
-                <h1 className="text-green text-sm font-heading">Read more</h1>
+                <h1 className="text-green dark:text-turq text-sm font-heading">Read more</h1>
               </LinkC>
             </div>
           </div>

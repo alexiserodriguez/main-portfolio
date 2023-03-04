@@ -9,12 +9,12 @@ import DV from "../assets/data-visualization.png";
 export function Service({ text, name, children }) {
   return (
     <div className="grid grid-rows-2 lg:flex lg:flex-row">
-      <div className="border-turq border-solid  flex flex-nowrap flex-row border-2 rounded-[25px] md:rounded-[50px] md:py-10  pl-8 md:pl-10 lg:pl-16 pr-8 md:min-w-[491px] hover:bg-[#21385a] shadow-lg hover:scale-105 transition duration-200">
+      <div className="border-turq border-solid  flex flex-nowrap flex-row border-2 rounded-[25px] md:rounded-[50px] md:py-10  pl-8 md:pl-10 lg:pl-16 pr-8 md:min-w-[491px] hover:bg-[#21385a] shadow-lg hover:scale-105 transition duration-200 dark:border-lborder dark:duration-300 dark:hover:bg-[#f1f1f1]">
         <div className="inline-block my-auto">
           <img src={name} width="85" className="py-5 md:py-0"></img>
         </div>
         <div className="my-auto mx-auto">
-          <h2 className="text-white font-heading pl-4 text-lg md:text-3xl">
+          <h2 className="text-white font-heading pl-4 text-lg md:text-3xl dark:text-blue duration-300">
             {text}
           </h2>
         </div>

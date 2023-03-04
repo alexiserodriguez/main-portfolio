@@ -2,10 +2,7 @@ import React from "react";
 import HeroText from "./HeroText";
 import Par from "./Par";
 import Alexis from "../assets/Alexis.png";
-import Github from "../assets/Github.svg";
-import LinkedIn from "../assets/LinkedIn.svg";
-import Tableau from "../assets/Tableau.svg";
-import SocialIcons, { Icon } from "./SocialIcons";
+import SocialIcons from "./SocialIcons";
 
 function Hero() {
   return (
@@ -24,20 +21,7 @@ function Hero() {
             </Par>
           </div>
           <div>
-            <SocialIcons>
-              <Icon
-                logo={LinkedIn}
-                link="https://www.linkedin.com/in/alexiserodriguez"
-              />
-              <Icon
-                logo={Github}
-                link="https://www.github.com/alexiserodriguez"
-              />
-              <Icon
-                logo={Tableau}
-                link="https://public.tableau.com/app/profile/alexiserodriguez"
-              />
-            </SocialIcons>
+            <SocialIcons />
           </div>
         </div>
 
@@ -63,20 +47,7 @@ function Hero() {
           </Par>
         </div>
         <div>
-          <SocialIcons>
-            <Icon
-              logo={LinkedIn}
-              link="https://www.linkedin.com/in/alexiserodriguez"
-            />
-            <Icon
-              logo={Github}
-              link="https://www.github.com/alexiserodriguez"
-            />
-            <Icon
-              logo={Tableau}
-              link="https://public.tableau.com/app/profile/alexiserodriguez"
-            />
-          </SocialIcons>
+          <SocialIcons/>
         </div>
       </div>
     </>

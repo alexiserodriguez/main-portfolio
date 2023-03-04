@@ -9,13 +9,13 @@ export function Tech({ t }) {
     "MS Excel":
       "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-excel ",
     Python:
-      "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-python",
+      "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-python dark:border-[#E0C22B]",
     Pandas:
       "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-pandas",
     NumPy:
       "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-numpy",
     Seaborn:
-      "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-seaborn",
+      "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-seaborn dark:border-[#487ea5]",
     SQL: "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-sql",
     MySQL:
       "inline-flex max-h-20 py-0 px-2 border-[3px] rounded-full border-mysql",
@@ -33,10 +33,10 @@ export function Tech({ t }) {
 
   const text = {
     "MS Excel": "p-1 text-lg mx-auto font-heading text-excel",
-    Python: "p-1 text-lg mx-auto font-heading text-python",
+    Python: "p-1 text-lg mx-auto font-heading text-python dark:text-[#E0C22B]",
     Pandas: "p-1 text-lg mx-auto font-heading text-pandas",
     NumPy: "p-1 text-lg mx-auto font-heading text-numpy",
-    Seaborn: "p-1 text-lg mx-auto font-heading text-seaborn",
+    Seaborn: "p-1 text-lg mx-auto font-heading text-seaborn dark:text-[#487ea5]",
     SQL: "p-1 text-lg mx-auto font-heading text-sql",
     MySQL: "p-1 text-lg mx-auto font-heading text-mysql",
     "MS SQL Server": "p-1 text-lg mx-auto font-heading text-mssql",
@@ -58,7 +58,7 @@ export function Tech({ t }) {
 
 export function Project({ p }) {
   return (
-    <div className="min-w-full md:min-w-full mx-auto bg-transparent rounded-[40px] shadow-lg overflow-hidden md:max-w-sm hover:bg-[#21385a] transition duration-300">
+    <div className="min-w-full md:min-w-full mx-auto bg-transparent rounded-[40px] shadow-lg overflow-hidden md:max-w-sm hover:bg-[#21385a] dark:hover:bg-lhover transition duration-300">
       <LinkC to={`/portfolio/${p.id}`}>
         <div className="md:flex md:flex-row">
           <div className="shrink-0">
@@ -69,7 +69,7 @@ export function Project({ p }) {
               width={610}
             />
           </div>
-          <div className="md:h-[500px] p-8 border-t-4 border-r-4 border-b-4 rounded-[40px] rounded-l-none border-turq flex flex-wrap justify-between">
+          <div className="md:h-[500px] p-8 border-t-4 border-r-4 border-b-4 rounded-[40px] rounded-l-none border-turq flex flex-wrap justify-between dark:border-lborder dark:duration-300 dark:border-2 dark:border-l-transparent">
             <div className="flex flex-wrap gap-2 max-h-[40px]">
               {p.techs.map((t) => (
                 <Tech t={t} />
@@ -78,14 +78,14 @@ export function Project({ p }) {
             <div className="flex flex-col justify-between">
               <LinkC
                 to={`/portfolio/${p.id}`}
-                className="block mt-1 text-xl md:text-4xl leading-tight font-heading text-white "
+                className="block mt-1 text-xl md:text-4xl leading-tight font-heading text-white dark:text-blue duration-300"
               >
                 {p.title}
               </LinkC>
-              <h1 className="block mt-1 text-md md:text-xl leading-tight font-heading text-white">
+              <h1 className="block mt-1 text-md md:text-xl leading-tight font-heading text-white dark:text-blue duration-300">
                 {p.date}
               </h1>
-              <p className="mt-2 text-white font-par  text-md md:text-lg">
+              <p className="mt-2 text-white font-par  text-md md:text-lg dark:text-blue duration-300">
                 {p.description}
               </p>
               <div className="md:flex gap-4">
@@ -97,9 +97,9 @@ export function Project({ p }) {
                 </LinkC>
                 <LinkC
                   to={p.readmore}
-                  className="flex items-center border-turq border-[3px] py-2 px-12 rounded-xl hover:border-green transition duration-200"
+                  className="flex items-center border-turq border-[3px] py-2 px-12 rounded-xl hover:border-green transition duration-200 dark:border-lborder dark:duration-300 dark:border-2 dark:hover:border-green"
                 >
-                  <h1 className="text-green text-xl font-heading">Read more</h1>
+                  <h1 className="text-green text-xl font-heading dark:text-turq ">Read more</h1>
                 </LinkC>
               </div>
             </div>

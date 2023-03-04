@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
+  darkMode : 'class',
+  "tailwindCSS.includeLanguages": {
+    javascript: "javascript",
+    html: "HTML",
+  },
+  "editor.quickSuggestions": {
+    strings: true,
+  },
   theme: {
     screens: {
       sm: "640px",
@@ -44,6 +52,8 @@ module.exports = {
       'looker': "#FBBC04",
       'react': "#61DAFB",
       'light': "#303030",
+      'lborder':"#CDD4DC",
+      'lhover':"#efefef"
     },
     width: {
       1200: "1200px",

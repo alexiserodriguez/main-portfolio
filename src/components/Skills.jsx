@@ -4,27 +4,27 @@ import Sk from "../data/skills.json";
 
 export function TechCard({ t, colorTech }) {
   const borderColors = {
-    excel: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-excel hover:bg-[#21385a] transition duration-200",
-    python: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-python hover:bg-[#21385a] transition duration-200",
-    pandas: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-pandas hover:bg-[#21385a] transition duration-200",
-    numpy: "flex flex-wrap py-2 px-5 md:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-numpy hover:bg-[#21385a] transition duration-200",
-    seaborn: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-seaborn hover:bg-[#21385a] transition duration-200",
-    sql: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-sql hover:bg-[#21385a] transition duration-200",
-    mysql: "flex flex-wrap py-0 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-mysql hover:bg-[#21385a] transition duration-200",
-    mssql: "flex flex-wrap py-2 px-4 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-mssql hover:bg-[#21385a] transition duration-200",
-    postgresql: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-postgresql hover:bg-[#21385a] transition duration-200",
-    tableau: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-tableau hover:bg-[#21385a] transition duration-200",
-    looker: "flex flex-wrap  py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-looker hover:bg-[#21385a] transition duration-200",
-    react: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-react hover:bg-[#21385a] transition duration-200"
+    excel: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-excel hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    python: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-python hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover dark:border-[#E0C22B]",
+    pandas: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-pandas hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    numpy: "flex flex-wrap py-2 px-5 md:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-numpy hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    seaborn: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-seaborn hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover dark:border-[#487ea5]",
+    sql: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-sql hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    mysql: "flex flex-wrap py-0 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-mysql hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    mssql: "flex flex-wrap py-2 px-4 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-mssql hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    postgresql: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-postgresql hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    tableau: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-tableau hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    looker: "flex flex-wrap  py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full  border-looker hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover",
+    react: "flex flex-wrap py-2 px-5 lg:py-5 lg:px-12 min-h-[50px] lg:min-h-[120px] border-[2px] rounded-full border-react hover:bg-[#21385a] transition duration-200 dark:hover:bg-lhover"
 
   };
 
   const textColors={
     excel: "my-auto text-excel",
-    python: "my-auto text-python",
+    python: "my-auto text-python dark:text-[#E0C22B]",
     pandas: "my-auto text-pandas",
     numpy: "my-auto text-numpy",
-    seaborn: "my-auto text-seaborn",
+    seaborn: "my-auto text-seaborn dark:text-[#487ea5]",
     sql: "my-auto text-sql",
     mysql: "my-auto text-mysql",
     mssql: "my-auto text-mssql",
