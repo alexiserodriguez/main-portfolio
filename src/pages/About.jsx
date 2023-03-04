@@ -20,7 +20,7 @@ function About() {
   return (
     <>
       <NavBarPages />
-      <AnimateOnScroll>
+      
         <div className="flex h-[160px] md:h-[250px] items-end">
           <Section>
             <Title>About me</Title>
@@ -58,7 +58,7 @@ function About() {
             </div>
           </div>
         </Section>
-      </AnimateOnScroll>
+      
       
         <div className="lg:mt-36">
           <Section>

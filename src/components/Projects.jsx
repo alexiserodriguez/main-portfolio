@@ -116,9 +116,9 @@ function Projects() {
       <div className="row lg:col">
         <div className="hidden lg:py-10 lg:gap-10 lg:flex lg:flex-col">
           {pRdesc.map((p, index) => (
-            <AnimateOnScroll>
+            
               <Project key={p.id} p={p} />
-            </AnimateOnScroll>
+            
           ))}
         </div>
         <div className=" lg:hidden py-10 gap-5 flex flex-col">
